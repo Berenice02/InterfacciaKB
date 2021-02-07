@@ -1,9 +1,33 @@
-<div>
-  <div>
-    <button type="button">Shopfloor</button> 
-    <button type="button">Products</button>
-    <button type="button">Demands</button>  
-    <button type="button">Process</button> 
-    <button type="button">Operations</button> 
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interface</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- include jQuery library -->
+        <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <form method="GET" action="/sf/">
+          <button class="submit">Shopfloor</button>
+        </form>
+        <form method="GET" action="/products/">
+          <button class="submit">Products</button>
+        </form>
+        <form method="GET" action="/demands/">
+          <button class="submit">Demands</button>
+        </form>
+        <form method="GET" action="/process/">
+          <button class="submit">Process</button>
+        </form>
+        <form method="GET" action="/operations/">
+          <button class="submit">Operations</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

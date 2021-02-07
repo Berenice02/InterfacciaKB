@@ -5,9 +5,6 @@ from flask import Blueprint, request, render_template, \
 # Import password / encryption helper tools
 from werkzeug.security import generate_password_hash, check_password_hash
 
-# Import the database object from the main app module
-from app import db
-
 # Import module forms
 from app.mod_auth.forms import LoginForm
 
