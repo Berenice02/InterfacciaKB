@@ -1,7 +1,7 @@
 # Import flask dependencies
 from flask import Blueprint, render_template
 
-from app.mod_products.models import Task, Function, Constraint
+from app.mod_process.models import Task, Function, Constraint
 
 #costanti
 IND = "Independent"
