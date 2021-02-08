@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Shopfloor</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- include jQuery library -->
-        <script src="{{ url_for('static', filename='lib/jquery-1.12.3.js') }}"></script>
-    </head>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
 
-    <body>
+    <title>Shopfloor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- include jQuery library -->
+    <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+
+    <!-- custom library -->
+
+  </head>
+
+  <body>
+    <div id="header">
+      <img class="logo" src="{{ url_for('static', filename='img/Sharework_logo_color.png') }}" />
+    </div>
+
+    <div id="content">
         <form method="GET" action="/sf/new">
             <button class="submit">Nuova risorsa</button>
           </form>
@@ -22,5 +33,6 @@
           <form method="GET" action="/sf/modAggr">
             <button class="submit">Modifica risorsa aggregata</button>
           </form>
-    </body>
+    </div>
+  </body>
 </html>

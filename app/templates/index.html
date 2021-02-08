@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Interface</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- include jQuery library -->
-        <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+
+    <title>Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- include jQuery library -->
+    <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+
+    <!-- custom library -->
+
   </head>
 
   <body>
-    <div>
+    <div id="header">
+      <img class="logo" src="{{ url_for('static', filename='img/Sharework_logo_color.png') }}" />
+    </div>
+
+    <div id="content">
       <div>
         <form method="GET" action="/sf">
           <button class="submit">Shopfloor</button>
         </form>
+      </div>
+      <div>
         <form method="GET" action="/products">
           <button class="submit">Products</button>
         </form>
+      </div>
+      <div>
         <form method="GET" action="/demands">
           <button class="submit">Demands</button>
         </form>
+      </div>
+      <div>
         <form method="GET" action="/process">
           <button class="submit">Process</button>
         </form>
+      </div>
+      <div>
         <form method="GET" action="/operations">
           <button class="submit">Operations</button>
         </form>
       </div>
     </div>
   </body>
+
 </html>
