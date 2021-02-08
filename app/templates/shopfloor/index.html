@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopfloor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- include jQuery library -->
+        <script src="{{ url_for('static', filename='lib/jquery-1.12.3.js') }}"></script>
+    </head>
+
+    <body>
+        <form method="GET" action="/sf/new">
+            <button class="submit">Nuova risorsa</button>
+          </form>
+          <form method="GET" action="/sf/mod">
+            <button class="submit">Modifica risorsa</button>
+          </form>
+          <form method="GET" action="/sf/newAggr">
+            <button class="submit">Aggrega risorse</button>
+          </form>
+          <form method="GET" action="/sf/modAggr">
+            <button class="submit">Modifica risorsa aggregata</button>
+          </form>
+    </body>
+</html>
