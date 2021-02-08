@@ -11,3 +11,15 @@ def hello():
 @mod_shopfloor.route('/new/')
 def new():
     return render_template("shopfloor/new.html")
+
+@mod_shopfloor.route('/mod/')
+def mod():
+    return render_template("shopfloor/mod.html")
+
+@mod_shopfloor.route('/newAggr/')
+def newAggr():
+    return render_template("shopfloor/newAggr.html")
+
+@mod_shopfloor.route('/modAggr/')
+def modAggr():
+    return render_template("shopfloor/modAggr.html")
