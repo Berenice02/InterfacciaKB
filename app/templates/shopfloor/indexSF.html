@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+
+    <title>Shopfloor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- include jQuery library -->
+    <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+
+    <!-- custom library -->
+
+  </head>
+
+  <body>
+    <div id="header">
+      <img class="logo" src="{{ url_for('static', filename='img/Sharework_logo_color.png') }}" />
+    </div>
+
+    <div id="content">
+      <div class="section">
+        <div class="section-title">
+          Scegli un'operazione
+        </div>
+
+        <div class="section-content">
+          <div class="section-item">
+            <div class="process">
+              <div class="navbar">
+                <button class="navbarB">
+                  <a href="/sf/new">Nuova risorsa</a>
+                </button>
+                <button class="navbarB">
+                  <a href="/sf/mod">Modifica risorsa</a>
+                </button>
+                <button class="navbarB">
+                  <a href="/sf/newAggr">Aggrega risorse</a>
+                </button>
+                <button class="navbarB">
+                  <a href="/sf/modAggr">Modifica risorsa aggregata</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div id="footer">
+  </div>
+</html>
