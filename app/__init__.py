@@ -16,8 +16,10 @@ def main():
 from app.mod_process.controllers import mod_process as process
 from app.mod_shopfloor.controllers import mod_shopfloor as sf
 from app.mod_products.controllers import mod_products as products
+from app.mod_demands.controllers import mod_demands as demands
 
 # Register blueprint
 app.register_blueprint(process)
 app.register_blueprint(sf)
 app.register_blueprint(products)
+app.register_blueprint(demands)
