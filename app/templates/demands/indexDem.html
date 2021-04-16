@@ -23,18 +23,47 @@
     <div id="content">
       <div class="section">
         <div class="section-title">
-          Scegli un'operazione
+          Gestione Domande
         </div>
 
         <div class="section-content">
             <div class="section-item">
                 <div class="process">
                     <div class="navbar">
+                      <form>
+                        <label>Nome: &emsp;</label>
+                        <input type="text"><br>
+                        <label>Quantità:</label>
+                        <input type="number"><br>
+                        <label>Tipo: &emsp; &emsp; &emsp;</label>
+                        <select title="Tipo domanda">
+                            <option selected disabled></option>
+                            <option>Esterna</option>
+                            <option>Interna</option>
+                            <option>Di magazzino</option>
+                        </select><br>
+                        <label>Prodotto: &emsp; &emsp; &emsp;</label>
+                        <select>
+                            <option selected disabled></option>
+                            <option>Sample 1</option>
+                            <option>Sample 2</option>
+                            <option>Sample 3</option>
+                            <option>Sample 4</option>
+                            <option>Sample 5</option>
+                        </select><br>
+                        <label>Metodo di produzione:</label>
+                        <select>
+                            <option selected disabled></option>
+                            <option>Sample 1</option>
+                            <option>Sample 2</option>
+                            <option>Sample 3</option>
+                            <option>Sample 4</option>
+                            <option>Sample 5</option>
+                        </select><br>
+                    </form>
+                    <p>&emsp;&emsp;&emsp;</p>
                         <button class="navbarB">
-                        <a href="/demands/newDem">Nuova domanda</a>
-                        </button>
-                        <button class="navbarB">
-                        <a href="/demands/modDem">Modifica domanda</a>
+                        <a href="/demands/">Inserisci la nuova domanda</a>
                         </button>
                     </div>
                 </div>
@@ -42,9 +71,24 @@
             
             <div class="section-item">
                 <div class="process">
-                    <p>e qui ci metto la lista delle domande attive</p>
+                  <div class="navbar">
+                    <p>MOSAICO &emsp; &emsp; n.1 &emsp; Interno &emsp; <a href="/demands/" style="color:white">Mosaico</a> &emsp; <a href="/demands/" style="color:white">Processo_1</a> &emsp; &emsp; &emsp;</p>
+                    <button>Modifica</button>
+                  </div>
+                  <div class="navbar">
+                    <p>DOMANDA2 &emsp; &emsp; n.50 &emsp; Esterno &emsp; <a href="/demands/" style="color:white">Prodotto_1</a> &emsp; <a href="/demands/" style="color:white">Processo_12</a> &emsp; &emsp; &emsp;</p>
+                    <button>Modifica</button>
+                  </div>
+                  <div class="navbar">
+                    <P>DOMANDA3 &emsp; &emsp; n.12 &emsp; Magazzino &emsp; <a href="/demands/" style="color:white">Prodotto_5</a> &emsp; <a href="/demands/" style="color:white">Processo_3</a> &emsp; &emsp; &emsp;</P>
+                    <button>Modifica</button>
+                  </div>
                 </div>
             </div>
+
+            <button>
+              <a href="/">Indietro</a>
+            </button>
         </div>
       </div>
     </div>

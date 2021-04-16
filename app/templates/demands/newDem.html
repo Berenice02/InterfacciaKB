@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" />
+
+    <title>Demands</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- include jQuery library -->
+    <script src="{{ url_for('static', filename='lib/jquery-3.4.1.js') }}"></script>
+
+    <!-- custom library -->
+
+  </head>
+
+  <body>
+    <div id="header">
+      <img class="logo" src="{{ url_for('static', filename='img/Sharework_logo_color.png') }}" />
+    </div>
+
+    <div id="content">
+      <div class="section">
+        <div class="section-title">
+          Inserisci i dati della nuova domanda
+        </div>
+
+        <div class="section-content">
+            <div class="section-item">
+                <div class="process">
+                    <form>
+                        <label>Nome:</label><br>
+                        <input type="text"><br>
+                        <label>Quantità:</label><br>
+                        <input type="number"><br>
+                        <label>Tipo:</label><br>
+                        <select title="Tipo domanda">
+                            <option selected disabled></option>
+                            <option>Esterna</option>
+                            <option>Interna</option>
+                            <option>Di magazzino</option>
+                        </select><br>
+                        <label>Prodotto:</label><br>
+                        <select>
+                            <option selected disabled></option>
+                            <option>Sample 1</option>
+                            <option>Sample 2</option>
+                            <option>Sample 3</option>
+                            <option>Sample 4</option>
+                            <option>Sample 5</option>
+                        </select><br>
+                        <label>Metodo di produzione:</label><br>
+                        <select>
+                            <option selected disabled></option>
+                            <option>Sample 1</option>
+                            <option>Sample 2</option>
+                            <option>Sample 3</option>
+                            <option>Sample 4</option>
+                            <option>Sample 5</option>
+                        </select><br>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="section-item">
+                <div class="process">
+                    <p>e qui ci metto la lista delle domande attive</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div id="footer">
+  </div>
+</html>
