@@ -3,7 +3,12 @@ DEBUG = True
 
 # Define the application directory
 import os
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))  
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+#DB settings
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'app.db')
+#DATABASE_CONNECT_OPTIONS = {}
+#SQLALCHEMY_ECHO = True
 
 # Application threads. A common general assumption is
 # using 2 per available processor cores - to handle
